@@ -1,0 +1,38 @@
+
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.SerializationFeature;
+import ioinformarics.oss.jackson.module.jsonld.JsonldModule;
+import ioinformarics.oss.jackson.module.jsonld.JsonldResource;
+
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.JsonMappingException;
+
+public class objtojsonld {
+	public static void main(String[] args) {
+	ObjectMapper objectMapper = new ObjectMapper();
+	objectMapper.configure(SerializationFeature.INDENT_OUTPUT,true);
+	objectMapper.registerModule(new JsonldModule());
+
+	// Create Person Instance
+	Person person = new Person();
+	person.id = "mailto:lahoti.ashish20@gmail.com";
+	person.name = "Ashish Lahoti";
+	person.jobtitle = "Software Developer";
+	person.url = "https://codingnconcepts.com";
+
+	// Transform to JSON-LD
+	String personJsonLd;
+	try {
+		personJsonLd = objectMapper.writer().writeValueAsString(JsonldResource.Builder.create().build(person));
+		System.out.println(personJsonLd);
+	} catch (JsonProcessingException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
+	
+}
+}
+
+
+
+

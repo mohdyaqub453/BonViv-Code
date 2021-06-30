@@ -1,0 +1,54 @@
+package Backend;
+import org.apache.jena.rdf.model.Model;
+import org.apache.jena.rdf.model.ModelFactory;
+import org.apache.jena.rdf.model.RDFNode;
+import org.apache.jena.rdf.model.Resource;
+import org.apache.jena.vocabulary.*;
+import org.apache.http.client.protocol.HttpClientContext;
+import org.apache.jena.query.*;
+import org.apache.jena.sparql.core.DatasetImpl;
+import org.apache.jena.sparql.engine.http.QueryEngineHTTP;
+import org.apache.jena.tdb.TDBFactory;
+
+public class dataset {
+
+	public static void main(String[] args) {
+		
+		Model model = ModelFactory.createDefaultModel();
+		model.read("example.jsonld") ;
+		model.write(System.out,"turtle");
+		
+		String querystring = "SELECT * WHERE{?subject ?predicate ?object}";
+		Query query = QueryFactory.create(querystring);
+		QueryExecution qexec =QueryExecutionFactory.create(query, model);
+		
+		try 
+		{
+			ResultSet result =qexec.execSelect();
+			ResultSetFormatter.out(System.out, result);
+		}
+		finally {
+			qexec.close();
+		}
+		
+		/* 
+		
+		 String directory = "MyDatabases/dataset" ;
+		  Dataset dataset = TDBFactory.createDataset(directory) ;
+		
+		  dataset.begin(ReadWrite.READ) ;
+		  // Get model inside the transaction
+		  Model model = dataset.getDefaultModel() ;
+		  
+		  model.write(System.out);
+		  
+		  dataset.end() ;
+		  
+		  dataset.begin(ReadWrite.WRITE) ;
+		  model = dataset.getDefaultModel() ;
+		  model.commit(); 
+		  dataset.end() ;*/
+		
+	}
+
+}

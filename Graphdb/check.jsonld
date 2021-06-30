@@ -1,0 +1,7 @@
+{
+  "@context": "https://json-ld.org/contexts/person.jsonld",
+  "@id": "http://dbpedia.org/resource/John_Lennon1",
+  "name": "John Lennon1",
+  "born": "1950-10-01",
+  "spouse": "http://dbpedia.org/resource/Cynthia_Lennon1"
+}

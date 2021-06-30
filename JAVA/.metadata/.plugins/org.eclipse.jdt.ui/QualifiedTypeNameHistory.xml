@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="org.apache.jena.rdf.model.Model"/>
+    <fullyQualifiedTypeName name="org.apache.jena.rdf.model.ModelFactory"/>
+    <fullyQualifiedTypeName name="org.apache.jena.rdf.model.Resource"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="org.apache.jena.rdf.model.RDFNode"/>
+    <fullyQualifiedTypeName name="org.apache.jena.sparql.core.DatasetImpl"/>
+    <fullyQualifiedTypeName name="org.apache.jena.tdb.TDBFactory"/>
+    <fullyQualifiedTypeName name="org.apache.jena.sparql.engine.http.QueryEngineHTTP"/>
+    <fullyQualifiedTypeName name="org.apache.http.client.protocol.HttpClientContext"/>
+    <fullyQualifiedTypeName name="org.apache.jena.sparql.engine.QueryIterator"/>
+    <fullyQualifiedTypeName name="javax.naming.Binding"/>
+    <fullyQualifiedTypeName name="org.apache.jena.sparql.engine.binding.Binding"/>
+    <fullyQualifiedTypeName name="org.apache.jena.sparql.core.Var"/>
+    <fullyQualifiedTypeName name="org.apache.jena.sparql.lib.RDFTerm2Json"/>
+    <fullyQualifiedTypeName name="org.apache.jena.sparql.algebra.Algebra"/>
+    <fullyQualifiedTypeName name="org.apache.jena.sparql.algebra.Op"/>
+    <fullyQualifiedTypeName name="com.fasterxml.jackson.databind.ObjectMapper"/>
+    <fullyQualifiedTypeName name="com.fasterxml.jackson.databind.SerializationFeature"/>
+    <fullyQualifiedTypeName name="ioinformarics.oss.jackson.module.jsonld.JsonldModule"/>
+    <fullyQualifiedTypeName name="ioinformarics.oss.jackson.module.jsonld.JsonldResource"/>
+    <fullyQualifiedTypeName name="ioinformarics.oss.jackson.module.jsonld.annotation.JsonldType"/>
+    <fullyQualifiedTypeName name="com.github.jsonldjava.core.JsonLdProcessor"/>
+    <fullyQualifiedTypeName name="ioinformarics.oss.jackson.module.jsonld.util.JsonUtils"/>
+    <fullyQualifiedTypeName name="java.util.HashMap"/>
+    <fullyQualifiedTypeName name="com.github.jsonldjava.core.JsonLdOptions"/>
+    <fullyQualifiedTypeName name="com.github.jsonldjava.utils.JsonUtils"/>
+    <fullyQualifiedTypeName name="com.fasterxml.jackson.annotation.JsonIgnoreProperties"/>
+    <fullyQualifiedTypeName name="com.fasterxml.jackson.annotation.JsonProperty"/>
+    <fullyQualifiedTypeName name="Backend.objtojsonld"/>
+</qualifiedTypeNameHistroy>
